@@ -1,0 +1,107 @@
+.deliveries-page {
+    max-width: 1400px;
+}
+
+.deliveries-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-8);
+}
+
+.deliveries-header h1 {
+    margin: 0;
+}
+
+.deliveries-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.deliveries-filters {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding: var(--spacing-3) var(--spacing-4);
+    background-color: var(--color-neutral-50);
+    border: 2px solid var(--color-neutral-200);
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-fast);
+}
+
+.search-box:focus-within {
+    border-color: var(--color-primary-500);
+    background-color: white;
+}
+
+.search-box svg {
+    color: var(--color-neutral-400);
+    flex-shrink: 0;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    background: none;
+    font-size: var(--font-size-base);
+    color: var(--color-neutral-900);
+    outline: none;
+}
+
+.search-input::placeholder {
+    color: var(--color-neutral-400);
+}
+
+.filter-buttons {
+    display: flex;
+    gap: var(--spacing-2);
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: var(--spacing-2) var(--spacing-4);
+    border: 2px solid var(--color-neutral-300);
+    background-color: white;
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-neutral-700);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.filter-btn:hover {
+    border-color: var(--color-primary-500);
+    color: var(--color-primary-600);
+}
+
+.filter-btn.active {
+    background-color: var(--color-primary-600);
+    border-color: var(--color-primary-600);
+    color: white;
+}
+
+.action-buttons {
+    display: flex;
+    gap: var(--spacing-2);
+}
+
+@media (max-width: 768px) {
+    .deliveries-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-4);
+    }
+
+    .deliveries-table {
+        overflow-x: auto;
+    }
+}

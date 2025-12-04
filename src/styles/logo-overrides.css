@@ -1,0 +1,32 @@
+/* Logo overrides for Polimix logo */
+
+/* Sidebar logo */
+.sidebar .logo-image {
+    height: 45px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    filter: none !important;
+    background-color: white;
+    padding: var(--spacing-2);
+    border-radius: var(--radius-md);
+}
+
+/* Login page logo */
+.login-page .logo-image {
+    height: 60px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    background-color: white;
+    padding: var(--spacing-3);
+    border-radius: var(--radius-lg);
+}
+
+/* Tracking page logo */
+.track-page .logo-image {
+    height: 60px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    background-color: white;
+    padding: var(--spacing-3);
+    border-radius: var(--radius-lg);
+}
